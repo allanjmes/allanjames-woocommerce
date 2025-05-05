@@ -6,3 +6,7 @@
     <h1>Welcome to the site!</h1>
     <p>Your content goes here.</p>
 </div>
+
+<h1 class="text-3xl font-bold underline">
+    Hello world!
+</h1>

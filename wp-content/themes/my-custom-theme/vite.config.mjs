@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import FullReload from 'vite-plugin-full-reload'
+import tailwindcss from '@tailwindcss/vite'
 import path from 'path'
 
 export default defineConfig({
@@ -26,6 +27,7 @@ export default defineConfig({
     emptyOutDir: false,
   },
   plugins: [
+    tailwindcss(),
     FullReload(['./**/*.php']), // ⬅️ Make sure this is outside `server`
   ],
 })

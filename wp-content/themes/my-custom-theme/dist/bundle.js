@@ -1,1 +1,1 @@
-
+let t=0;const e=document.getElementById("loading-count"),o=document.getElementById("loading-container"),l=document.getElementById("main-content"),a=10,i=setInterval(()=>{t++,e.textContent=t,t>=99&&(clearInterval(i),document.readyState==="complete"?n():window.addEventListener("load",n))},a);function n(){e.textContent=100,setTimeout(()=>{o.style.display="none",l.style.display="block"},500)}
