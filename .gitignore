@@ -7,7 +7,7 @@ wp-content/themes/my-custom-theme/vendor/
 wp-content/themes/my-custom-theme/node_modules/
 
 # Production build
-wp-content/themes/my-custom-theme/dist/*
+wp-content/themes/my-custom-theme/dist/
 
 # Wordpress asset folder
 wp-content/uploads/
