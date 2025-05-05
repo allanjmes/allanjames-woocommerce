@@ -1,0 +1,7 @@
+*.zip
+.htaccess
+wp-config.php
+
+# Project dev files
+wp-content/themes/mainsite-theme/vendor/*
+wp-content/themes/mainsite-theme/node_modules/*

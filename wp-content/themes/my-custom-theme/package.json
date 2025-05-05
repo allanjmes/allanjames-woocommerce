@@ -1,0 +1,21 @@
+{
+  "name": "my-custom-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vite": "^6.3.4",
+    "vite-plugin-full-reload": "^1.2.0",
+    "chokidar-cli": "^3.0.0"
+  },
+  "dependencies": {
+    
+  }
+}
