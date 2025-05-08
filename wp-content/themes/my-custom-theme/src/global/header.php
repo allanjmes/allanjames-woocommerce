@@ -1,4 +1,4 @@
-<header class="mx-5">
+<header class="mx-5 max-w-7xl xl:mx-auto">
     <div class="py-5 border-b border-primary grid grid-cols-3">
         <div class="flex gap-5 justify-start items-center">
             <button class="btn-outline-primary flex gap-1 group/svg-menu">
