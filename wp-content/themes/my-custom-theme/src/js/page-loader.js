@@ -2,7 +2,7 @@ let count = 0;
 const loadingCountElement = document.getElementById('loading-count');
 const loadingContainer = document.getElementById('loading-container');
 const mainContent = document.getElementById('main-content');
-const loadingIntervalDuration = 10;
+const loadingIntervalDuration = 5;
 
 const interval = setInterval(() => {
     count++;

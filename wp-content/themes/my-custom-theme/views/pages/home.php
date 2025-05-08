@@ -3,10 +3,9 @@
 </div>
 
 <div id="main-content" style="display: none;">
-    <h1>Welcome to the site!</h1>
-    <p>Your content goes here.</p>
+    <div class="flex justify-center" style="height: 100%">
+        <h1 class="text-8xl font-semibold tracking-thin bg-gradient-to-r from-primary via-yellow to-accent bg-clip-text text-transparent leading-normal">
+            Camera <span class="font-anuphan">Fujifilm</span> GFX 100S
+        </h1>
+    </div>
 </div>
-
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-</h1>
