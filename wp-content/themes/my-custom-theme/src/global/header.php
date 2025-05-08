@@ -1,6 +1,6 @@
 <header class="mx-5">
-    <div class="flex justify-between py-5 border-b border-primary">
-        <div class="flex gap-5 items-center">
+    <div class="py-5 border-b border-primary grid grid-cols-3">
+        <div class="flex gap-5 justify-start items-center">
             <button class="btn-outline-primary flex gap-1 group/svg-menu">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -29,10 +29,10 @@
                 Search
             </button>
         </div>
-        <div>
-            <h1>Logo</h1>
+        <div class="flex justify-center items-center">
+            <h1 class="text-3xl font-extrabold text-primary leading-normal">Logo<span class="text-accent">Here</span></h1>
         </div>
-        <div class="flex gap-5 items-center">
+        <div class="flex gap-5 justify-end items-center">
             <button id="toggle-theme-btn" class="btn-primary">
                 <h1>Toggle</h1>
             </button>
