@@ -3,3 +3,4 @@ import '../../style.css';
 
 import './page-loader';
 import './toggle-theme';
+import './accordion-collapse';

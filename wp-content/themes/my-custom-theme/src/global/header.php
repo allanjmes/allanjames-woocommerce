@@ -1,5 +1,5 @@
 <header class="mx-5 max-w-7xl xl:mx-auto">
-    <div class="py-5 border-b border-primary grid grid-cols-3">
+    <div class="py-10 border-b border-gray-500 grid grid-cols-3">
         <div class="flex gap-5 justify-start items-center">
             <button class="btn-outline-primary flex gap-1 group/svg-menu">
                 <svg
@@ -36,7 +36,9 @@
             <button id="toggle-theme-btn" class="btn-primary">
                 <h1>Toggle</h1>
             </button>
-            <h1 class="text-primary">Profile</h1>
+            <button class="btn-secondary">
+                <h1 class="text-primary">Profile</h1>
+            </button>
         </div>
     </div>
 </header>
