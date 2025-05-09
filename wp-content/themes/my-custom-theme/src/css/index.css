@@ -5,6 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 @import "tailwindcss";
+@plugin "daisyui" {
+  themes: false;
+  include: collapse;
+}
+
+
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
@@ -13,18 +19,19 @@
   --color-secondary: oklch(96.2% 0.015 97.1);
   --color-accent: oklch(73.0% 0.196 65.8);
   --color-yellow: oklch(88.1% 0.185 83.1);
-  --color-gray-300: oklch(0.96 0.0098 87.47);
+  --color-gray-100: oklch(94% 0.015 97.1);
+  --color-gray-300: oklch(0.86 0.0098 87.47);
   --color-gray-500: oklch(0.66 0.0094 84.58);
 
   --color-white: #ffffff;
   --color-black: #000;
 
+  --color-hover-primary: oklch(31% 0.047 35.38);
+  --color-hover-secondary: oklch(100% 0.015 97.1);
+  --color-hover-accent: oklch(83.0% 0.196 65.8);
+
   --font-anuphan: "Anuphan", sans-serif;
   --font-archivo: "Archivo", sans-serif;
-  --font-funnel: "Funnel Display", sans-serif;
-  --font-arimo: "Arimo", sans-serif;
-  --font-rethink: "Rethink Sans", sans-serif;
-  --font-almarai: "Almarai", sans-serif;
 }
 
 @layer base {
@@ -33,10 +40,16 @@
     --color-secondary: oklch(14.2% 0.015 97.1);
     --color-accent: oklch(73.0% 0.196 65.8);
     --color-yellow: oklch(88.1% 0.185 83.1);
-    --color-gray-300: oklch(0.22 0.01 87.47);
-    --color-gray-500: oklch(0.44 0.0094 84.58);
+    --color-gray-100: oklch(56.2% 0.015 97.1);
+    --color-gray-300: oklch(66.2% 0.015 97.1);
+    --color-gray-500: oklch(86.2% 0.015 97.1);
+
     --color-white: #ffffff;
-    --color-black: #000
+    --color-black: #000;
+
+    --color-hover-primary: oklch(98.8% 0.05 35.38);
+    --color-hover-secondary: oklch(20.2% 0.015 97.1);
+    --color-hover-accent: oklch(58.0% 0.196 65.8);
   }
 
   .font-anuphan {
@@ -71,14 +84,15 @@
     box-shadow: var(--shadow-md);
     &:hover {
       @media (hover: hover) {
-        background-color: var(--color-black);
+        background-color: var(--color-hover-primary);
       }
     }
   }
   [data-theme="dark"] .btn-primary {
     &:hover {
       @media (hover: hover) {
-        background-color: var(--color-white);
+        background-color: var(--color-hover-primary);
+        /* color: var(--color-primary); */
       }
     }
   }
@@ -99,4 +113,87 @@
       }
     }
   }
+  .btn-secondary {
+    border-radius: calc(infinity * 1px);
+    background-color: var(--color-secondary);
+    padding-inline: --spacing(5);
+    padding-block: --spacing(2);
+    /* font-weight: var(--font-weight-semibold); */
+    color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-hover-secondary);
+      }
+    }
+  }
+  [data-theme="dark"] .btn-secondary {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-hover-secondary);
+        /* color: var(--color-primary); */
+      }
+    }
+  }
+  .btn-outline-secondary {
+    border-radius: calc(infinity * 1px);
+    background-color: transparent;
+    border: 1px solid var(--color-secondary);
+    padding-inline: --spacing(5);
+    padding-block: --spacing(2);
+    /* font-weight: var(--font-weight-semibold); */
+    color: var(--color-secondary);
+    box-shadow: var(--shadow-md);
+    transition: background-color 0.2s, color 0.2s;
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-secondary);
+        color: var(--color-primary);
+      }
+    }
+  }
+  .btn-accent {
+    border-radius: calc(infinity * 1px);
+    background-color: var(--color-accent);
+    padding-inline: --spacing(5);
+    padding-block: --spacing(2);
+    /* font-weight: var(--font-weight-semibold); */
+    color: var(--color-secondary);
+    box-shadow: var(--shadow-md);
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-hover-accent);
+      }
+    }
+  }
+  [data-theme="dark"] .btn-accent {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-hover-accent);
+        /* color: var(--color-primary); */
+      }
+    }
+  }
+  .btn-outline-accent {
+    border-radius: calc(infinity * 1px);
+    background-color: transparent;
+    border: 1px solid var(--color-accent);
+    padding-inline: --spacing(5);
+    padding-block: --spacing(2);
+    /* font-weight: var(--font-weight-semibold); */
+    color: var(--color-accent);
+    box-shadow: var(--shadow-md);
+    transition: background-color 0.2s, color 0.2s;
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-accent);
+        color: var(--color-secondary);
+      }
+    }
+  }
+}
+
+.collapse-exclusive.active-collapse {
+  background-color: var(--color-yellow);
+  border-color: var(--color-yellow);
 }
