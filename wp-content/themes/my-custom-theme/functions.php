@@ -62,3 +62,57 @@ function my_custom_theme_scripts() {
 add_action('wp_enqueue_scripts', 'my_custom_theme_scripts');
 
 
+add_action('wp_head', 'page_loader_inline_styles', 0); // priority 0 = very early
+function page_loader_inline_styles() {
+    ?>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        html.loading, body.loading {
+            overflow: hidden;
+        }
+        #loading-container {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            background-color: #f5f3e8; /* fallback color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #loading-count {
+            font-family: "Archivo", sans-serif;
+            font-weight: 900;
+            font-size: 128px;
+            color: #381c14;
+        }
+    </style>
+    <?php
+}
+
+
+add_action('wp_body_open', 'inject_page_loader');
+function inject_page_loader() {
+    ?>
+    <div id="loading-container" class="bg-secondary h-screen w-screen fixed z-[9999]">
+        <div class="flex justify-center items-center h-full">
+            <h1 class="text-primary text-9xl font-extrabold">
+                <span id="loading-count"></span>
+            </h1>
+        </div>
+    </div>
+    <?php
+}
+
+
+add_action('wp_enqueue_scripts', 'enqueue_page_loader_script');
+function enqueue_page_loader_script() {
+    wp_enqueue_script(
+        'page-loader',
+        get_template_directory_uri() . '/js/page-loader.js',
+        [],
+        false,
+        true // load in footer
+    );
+}

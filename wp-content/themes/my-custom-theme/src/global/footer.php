@@ -1,1 +1,64 @@
-<h1>this is footer</h1>
+<footer class="bg-primary max-w-7xl xl:mx-auto py-5">
+    <h1 class="text-9xl text-secondary text-center font-extrabold mb-5">Logo<span class="text-accent">Here</span></h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div class="flex flex-col gap-5 mx-auto text-secondary">
+            <h4 class="fw-bold text-lg">Contact</h4>
+            <ul class="list-none flex flex-col gap-1">
+                <li>
+                    support@mirotive.com
+                </li>
+                <li>
+                    +1234 5678 90
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col gap-5 mx-auto text-secondary">
+            <h4 class="fw-bold text-lg">Social Media</h4>
+            <ul class="list-none flex flex-col gap-1">
+                <li>
+                    Facebook
+                </li>
+                <li>
+                    Pinterest
+                </li>
+                <li>
+                    Instagram
+                </li>
+                <li>
+                    Youtube
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col gap-5 mx-auto text-secondary">
+            <h4 class="fw-bold text-lg">Company</h4>
+            <ul class="list-none flex flex-col gap-1">
+                <li>
+                    About Us
+                </li>
+                <li>
+                    Gallery
+                </li>
+                <li>
+                    Product
+                </li>
+                <li>
+                    Collection
+                </li>
+            </ul>
+        </div>
+        <div class="flex flex-col gap-5 mx-auto text-secondary">
+            <h4 class="fw-bold text-lg">Terms <span class="font-anuphan">&</span> Policy</h4>
+            <ul class="list-none flex flex-col gap-1">
+                <li>
+                    Privacy Policy
+                </li>
+                <li>
+                    Terms of use
+                </li>
+                <li>
+                    Accessibility
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
