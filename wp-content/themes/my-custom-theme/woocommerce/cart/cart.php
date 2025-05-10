@@ -23,7 +23,6 @@ do_action( 'woocommerce_before_cart' ); ?>
 	<?php do_action( 'woocommerce_before_cart_table' ); ?>
 
 	<table class="shop_table shop_table_responsive cart woocommerce-cart-form__contents" cellspacing="0">
-		<h1>test cart content - /theme/woocommerce/cart/car.php</h1>
 		<thead>
 			<tr>
 				<th class="product-remove"><span class="screen-reader-text"><?php esc_html_e( 'Remove item', 'woocommerce' ); ?></span></th>

@@ -1,8 +1,4 @@
-<div id="loading-container">
-    <h1>Loading... <span id="loading-count">0</span></h1>
-</div>
-
-<div id="main-content" style="display: none;">
+<!-- <div id="main-content" style="display: none;"> -->
     <!-- HERO -->
     <section class="max-w-7xl xl:mx-auto">
         <div class="flex justify-center">
@@ -73,7 +69,7 @@
         </div>
     </section>
     <!-- EXCLUSIVE -->
-     <section class="max-w-7xl xl:mx-auto my-20">
+    <section class="max-w-7xl xl:mx-auto my-20">
         <div class="my-20">
             <h1 class="text-9xl col-span-1 text-primary text-center lg:mx-10">Our Exclusive Camera Just For You</h1>
         </div>
@@ -101,6 +97,27 @@
             </div>
             <div class="collapse collapse-exclusive collapse-arrow active-collapse border border-gray-300 rounded-none dark:text-primary">
                 <input type="radio" name="my-accordion-1" checked="checked" />
+                <div class="collapse-title">
+                    <h1 class="font-semibold text-center text-3xl">Phase One XF IQ4 150MP</h1>
+                </div>
+                <div class="collapse-content text-2xl grid grid-rows-3 lg:grid-rows-none lg:grid-cols-4">
+                    <div class="row-span-1 col-span-1 flex justify-start items-end ps-5">
+                        <h1>$230.00</h1>
+                    </div>
+                    <div class="row-span-1 col-span-2 flex justify-center items-center">
+                        <img
+                            src="<?php echo get_template_directory_uri() . '/src/assets/home/3d-camera.png'; ?>"
+                            class="w-90 h-full"
+                            alt=""
+                        >
+                    </div>
+                    <div class="row-span-1 col-span-1 flex justify-end items-end pe-5">
+                        <h1>Total Ratings: 5</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none dark:text-primary">
+                <input type="radio" name="my-accordion-1" />
                 <div class="collapse-title">
                     <h1 class="font-semibold text-center text-3xl">Phase One XF IQ4 150MP</h1>
                 </div>
@@ -317,7 +334,24 @@
         </div>
     </section>
     <!-- NEWSLETTER -->
-    <section class="max-w-7xl xl:mx-auto bg-gray-100 my-10" style="height: 100vh">
-        <div class=""></div>
+    <section class="max-w-7xl xl:mx-auto bg-gray-100 mt-10 mb-5">
+        <div class="relative p-10 overflow-hidden relative">
+                <div class="flex flex-col gap-10 justify-start w-4/7">
+                    <h1 class="text-8xl text-primary">Subscribe to our Newsletter</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error harum nam modi ipsa doloribus deserunt!</p>
+                    <div class="flex gap-5">
+                        <button class="btn-secondary">Enter your email</button>
+                        <button class="btn-accent">Enter your email</button>
+                    </div>
+                </div>
+                <div class="absolute top-0 -right-5">
+                    <img
+                        src="<?php echo get_template_directory_uri() . '/src/assets/home/video-3d-camera.png'; ?>"
+                        class="transform scale-150"
+                        alt=""
+                    >
+                </div>
+            </div>
+        </div>
     </section>
-</div>
+<!-- </div> -->

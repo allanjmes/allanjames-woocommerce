@@ -10,8 +10,6 @@
   include: collapse;
 }
 
-
-
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @theme {
@@ -196,4 +194,9 @@
 .collapse-exclusive.active-collapse {
   background-color: var(--color-yellow);
   border-color: var(--color-yellow);
+}
+
+.woocommerce td.product-thumbnail img {
+  width: 100px !important;
+  height: auto !important;
 }
