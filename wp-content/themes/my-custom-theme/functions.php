@@ -116,3 +116,9 @@ function enqueue_page_loader_script() {
         true // load in footer
     );
 }
+
+add_filter( 'woocommerce_loop_add_to_cart_args', 'override_loop_add_to_cart_button_class' );
+function override_loop_add_to_cart_button_class( $args ) {
+    $args['class'] = 'btn-primary rounded-none text-center'; // fully override
+    return $args;
+}
