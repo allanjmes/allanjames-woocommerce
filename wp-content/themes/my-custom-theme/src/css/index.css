@@ -9,6 +9,7 @@
   themes: false;
   include: collapse;
 }
+@source "../**/*.php";
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
@@ -189,11 +190,6 @@
       }
     }
   }
-}
-
-.collapse-exclusive.active-collapse {
-  background-color: var(--color-yellow);
-  border-color: var(--color-yellow);
 }
 
 .woocommerce td.product-thumbnail img {

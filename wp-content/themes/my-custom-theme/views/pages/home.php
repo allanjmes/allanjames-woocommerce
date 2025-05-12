@@ -74,7 +74,7 @@
             <h1 class="text-9xl col-span-1 text-primary text-center lg:mx-10">Our Exclusive Camera Just For You</h1>
         </div>
         <div class="flex flex-col gap-5">
-            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none dark:text-primary">
+            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none has-checked:bg-yellow dark:text-primary dark:has-checked:text-secondary">
                 <input type="radio" name="my-accordion-1" />
                 <div class="collapse-title">
                     <h1 class="font-semibold text-center text-3xl">Phase One XF IQ4 150MP</h1>
@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="collapse collapse-exclusive collapse-arrow active-collapse border border-gray-300 rounded-none dark:text-primary">
+            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none has-checked:bg-yellow dark:text-primary dark:has-checked:text-secondary">
                 <input type="radio" name="my-accordion-1" checked="checked" />
                 <div class="collapse-title">
                     <h1 class="font-semibold text-center text-3xl">Phase One XF IQ4 150MP</h1>
@@ -116,7 +116,7 @@
                     </div>
                 </div>
             </div>
-            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none dark:text-primary">
+            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none has-checked:bg-yellow dark:text-primary dark:has-checked:text-secondary">
                 <input type="radio" name="my-accordion-1" />
                 <div class="collapse-title">
                     <h1 class="font-semibold text-center text-3xl">Phase One XF IQ4 150MP</h1>
@@ -137,7 +137,7 @@
                     </div>
                 </div>
             </div>
-            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none dark:text-primary">
+            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none has-checked:bg-yellow dark:text-primary dark:has-checked:text-secondary">
                 <input type="radio" name="my-accordion-1" />
                 <div class="collapse-title">
                     <h1 class="font-semibold text-center text-3xl">Phase One XF IQ4 150MP</h1>
@@ -272,10 +272,10 @@
             </div>
             <div class="col-span-1">
                 <div class="join join-vertical bg-base-100">
-                    <div class="collapse collapse-creatives collapse-arrow join-item border-b border-gray-500 rounded-none">
+                    <div class="collapse collapse-creatives collapse-arrow join-item border-b border-gray-500 rounded-none dark:text-primary">
                         <input type="radio" name="my-accordion-4" checked="checked" />
                         <div class="collapse-title">
-                            <h1 class="font-semibold text-3xl">Precision and Clarity</h1>
+                            <h1 class="font-semibold text-3xl text-primary">Precision and Clarity</h1>
                         </div>
                         <div class="collapse-content text-sm flex flex-col gap-5">
                             <div class="flex justify-between items-center gap-5">
@@ -291,10 +291,10 @@
                             <button class="btn-accent w-[200px]">Learn More ></button>
                         </div>
                     </div>
-                    <div class="collapse collapse-creatives collapse-arrow join-item border-b border-gray-500 rounded-none">
+                    <div class="collapse collapse-creatives collapse-arrow join-item border-b border-gray-500 rounded-none dark:text-primary">
                         <input type="radio" name="my-accordion-4" />
                         <div class="collapse-title">
-                            <h1 class="font-semibold text-3xl">Dynamic Range</h1>
+                            <h1 class="font-semibold text-3xl text-primary">Dynamic Range</h1>
                         </div>
                         <div class="collapse-content text-sm flex flex-col gap-5">
                             <div class="flex justify-between items-center gap-5">
@@ -310,10 +310,10 @@
                             <button class="btn-accent w-[200px]">Learn More ></button>
                         </div>
                     </div>
-                    <div class="collapse collapse-creatives collapse-arrow join-item border-b border-gray-500 rounded-none">
+                    <div class="collapse collapse-creatives collapse-arrow join-item border-b border-gray-500 rounded-none dark:text-primary">
                         <input type="radio" name="my-accordion-4" />
                         <div class="collapse-title">
-                            <h1 class="font-semibold text-3xl">Speed <span class="font-anuphan">&</span> Performance</h1>
+                            <h1 class="font-semibold text-3xl text-primary">Speed <span class="font-anuphan">&</span> Performance</h1>
                         </div>
                         <div class="collapse-content text-sm flex flex-col gap-5">
                             <div class="flex justify-between items-center gap-5">
