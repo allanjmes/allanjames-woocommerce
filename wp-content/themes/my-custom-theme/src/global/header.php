@@ -14,6 +14,23 @@
                 </svg>
                 Menu
             </button>
+            <a type="button" class="btn-outline-primary flex gap-1 group/svg-shop" href="<?php echo site_url() . '/shop'; ?>">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    class="icon
+                        stroke-primary group-hover/svg-shop:stroke-secondary
+                        fill-secondary group-hover/svg-shop:fill-primary"
+                >
+                    <g id="handbag">
+                        <path class="cls-1" d="M3.41,7.23H20.59a0,0,0,0,1,0,0v12a3.23,3.23,0,0,1-3.23,3.23H6.64a3.23,3.23,0,0,1-3.23-3.23v-12A0,0,0,0,1,3.41,7.23Z" stroke-width="2"/>
+                        <path class="cls-1" d="M8.18,10.09V5.32A3.82,3.82,0,0,1,12,1.5h0a3.82,3.82,0,0,1,3.82,3.82v4.77" stroke-width="2"/>
+                    </g>
+                </svg>
+                Shop
+            </a>
             <button class="btn-outline-primary flex gap-1 group/svg-search">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -30,15 +47,28 @@
             </button>
         </div>
         <div class="flex justify-center items-center">
-            <h1 class="text-3xl font-extrabold text-primary leading-normal">Logo<span class="text-accent">Here</span></h1>
+            <a href="<?php echo site_url(); ?>">
+                <h1 class="text-3xl font-extrabold text-primary leading-normal">Logo<span class="text-accent">Here</span></h1>
+            </a>
         </div>
         <div class="flex gap-5 justify-end items-center">
             <button id="toggle-theme-btn" class="btn-primary">
                 <h1>Toggle</h1>
             </button>
-            <button class="btn-secondary">
-                <h1 class="text-primary">Profile</h1>
-            </button>
+            <a type="button" class="btn-outline-primary flex gap-1 group/svg-cart" href="<?php echo site_url() . '/cart'; ?>">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20px"
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    class="icon
+                        stroke-primary group-hover/svg-cart:stroke-secondary
+                        fill-secondary group-hover/svg-cart:fill-primary"
+                >
+                    <path d="M6.29977 5H21L19 12H7.37671M20 16H8L6 3H3M9 20C9 20.5523 8.55228 21 8 21C7.44772 21 7 20.5523 7 20C7 19.4477 7.44772 19 8 19C8.55228 19 9 19.4477 9 20ZM20 20C20 20.5523 19.5523 21 19 21C18.4477 21 18 20.5523 18 20C18 19.4477 18.4477 19 19 19C19.5523 19 20 19.4477 20 20Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Cart
+            </a>
         </div>
     </div>
 </header>
