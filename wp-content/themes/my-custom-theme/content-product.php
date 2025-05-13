@@ -30,7 +30,6 @@ if ( ! is_a( $product, WC_Product::class ) || ! $product->is_visible() ) {
         <h2 class="text-lg font-semibold ms-2"><?php the_title(); ?></h2>
         <span class="font-bold ms-2"><?php echo $product->get_price_html(); ?></span>
     </a>
-    <!-- To override add-to-cart button, check: -->
-     <!-- override_loop_add_to_cart_button_class function in functions.php -->
+    <!-- To override add-to-cart button, check: override_loop_add_to_cart_button_class function in functions.php -->
     <?php woocommerce_template_loop_add_to_cart(); ?>
 </li>
