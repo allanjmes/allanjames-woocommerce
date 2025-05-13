@@ -9,7 +9,6 @@
   themes: false;
   include: collapse;
 }
-@source "../**/*.php";
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
@@ -28,6 +27,8 @@
   --color-hover-primary: oklch(31% 0.047 35.38);
   --color-hover-secondary: oklch(100% 0.015 97.1);
   --color-hover-accent: oklch(83.0% 0.196 65.8);
+
+  --color-disabled-primary: oklch(51% 0.047 35.38);
 
   --font-anuphan: "Anuphan", sans-serif;
   --font-archivo: "Archivo", sans-serif;
@@ -49,6 +50,8 @@
     --color-hover-primary: oklch(98.8% 0.05 35.38);
     --color-hover-secondary: oklch(20.2% 0.015 97.1);
     --color-hover-accent: oklch(58.0% 0.196 65.8);
+
+    --color-disabled-primary: oklch(68.8% 0.05 35.38);
   }
 
   .font-anuphan {
@@ -195,4 +198,28 @@
 .woocommerce td.product-thumbnail img {
   width: 100px !important;
   height: auto !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.woocommerce-message {
+  border-top-color: var(--color-accent);
+  background-color: var(--color-gray-100);
+  color: var(--color-primary);
+}
+
+.woocommerce-info {
+  border-top-color: var(--color-accent);
+  background-color: var(--color-gray-100);
+  color: var(--color-primary);
 }

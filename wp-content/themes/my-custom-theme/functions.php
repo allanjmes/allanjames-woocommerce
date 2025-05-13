@@ -117,8 +117,16 @@ function enqueue_page_loader_script() {
     );
 }
 
-add_filter( 'woocommerce_loop_add_to_cart_args', 'override_loop_add_to_cart_button_class' );
-function override_loop_add_to_cart_button_class( $args ) {
-    $args['class'] = 'btn-primary rounded-none text-center'; // fully override
+add_filter( 'woocommerce_loop_add_to_cart_args', 'override_shop_loop_add_to_cart_button_class' );
+function override_shop_loop_add_to_cart_button_class( $args ) {
+    // override/customize class name -> add-to-cart button in shop page
+    $args['class'] = 'btn-primary rounded-none text-center';
+    return $args;
+}
+
+add_filter( 'woocommerce_template_single_add_to_cart', 'override_woocommerce_grouped_add_to_cart');
+function override_woocommerce_grouped_add_to_cart( $args ) {
+    // override/customize class name -> add-to-cart button in single product page
+    $args['class'] = 'btn-primary rounded-none';
     return $args;
 }
