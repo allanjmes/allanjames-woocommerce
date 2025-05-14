@@ -276,64 +276,72 @@
             <h1 class="text-6xl lg:text-9xl col-span-1 text-primary lg:mx-10">Our Product</h1>
             <h1 class="text-6xl lg:text-9xl col-span-1 text-primary lg:mx-10">Details</h1>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 grid-rows-[100px_100px_100px] lg:grid-rows-[150px_150px_150px] gap-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-[200px_200px_200px] gap-4">
             <!-- Left Large Image -->
-            <div class="lg:row-span-3 bg-gray-100 overflow-hidden">
-                <div class="flex justify-start relative -top-35 lg:-top-30 lg:-left-50">
-                    <img
+            <div class="md:row-span-3 bg-gray-100 flex items-center justify-center overflow-hidden">
+                <img
                     src="<?php echo get_template_directory_uri() . '/src/assets/home/3d-camera.png'; ?>"
                     alt="Videoing Lens"
-                    class="transform scale-100 lg:scale-120 object-cover"
-                    >
-                </div>
+                    class="w-auto h-[300px] md:h-full md:max-h-[450px] object-contain"
+                >
             </div>
 
             <!-- Top Right Image -->
-            <div class="lg:row-span-2 bg-gray-100 overflow-hidden">
-                <div class="flex justify-end relative -top-35 lg:-top-30 lg:-right-30">
-                    <img
+            <div class="md:row-span-2 bg-gray-100 flex items-center justify-center overflow-hidden">
+                <img
                     src="<?php echo get_template_directory_uri() . '/src/assets/home/video-3d-camera.png'; ?>"
                     alt="Film Lens"
-                    class="transform scale-120 lg:scale-150 object-cover"
-                    >
-                </div>
+                    class="h-auto w-[400px] md:w-full md:max-w-[500px] object-contain"
+                >
             </div>
 
             <!-- Bottom Right Image -->
-            <div class="lg:row-span-1 bg-gray-100 overflow-hidden">
-                <div class="flex justify-center align-center relative -top-20 lg:-top-25">
-                    <img
+            <div class="md:row-span-1 bg-gray-100 flex items-center justify-center overflow-hidden">
+                <img
                     src="<?php echo get_template_directory_uri() . '/src/assets/home/3d-camera-front.png'; ?>"
                     alt="Another Lens"
-                    class="transform scale-90 lg:scale-100 object-cover"
-                    >
-                </div>
+                    class="h-auto w-[220px] md:w-full md:max-w-[250px] object-contain"
+                >
             </div>
         </div>
+
+
     </section>
     <!-- CRAFTED FOR CREATIVES -->
     <section class="max-w-7xl xl:mx-auto">
-        <div class="my-10 pb-5 border-b border-gray-500">
-            <div class="mt-20 mb-10 lg:mb-20 flex flex-col justify-center items-center">
+        <div class="mt-10 lg:mb-10 lg:pb-5 border-b border-gray-500">
+            <div class="mt-20 mb-5 lg:mb-20 flex flex-col justify-center items-center text-center lg:text-start">
                 <h1 class="text-6xl lg:text-9xl col-span-1 text-primary lg:mx-10">Crafted for Creatives</h1>
                 <h1 class="text-6xl lg:text-9xl col-span-1 text-primary lg:mx-10">your lens to the world</h1>
             </div>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-10">
-            <div class="col-span-1">
-                <div class="bg-yellow h-[200px] lg:h-[400px] relative">
-                    <div class="relative overflow-hidden h-full w-full">
-                        <h1 class="text-6xl lg:text-9xl font-extrabold text-gray-300 z-10 absolute lg:-bottom-10 lg:-right-3">Power</h1>
+        <div class="flex flex-col md:flex-row gap-10 py-10">
+            <!-- Left Column -->
+            <div class="flex-1 h-full">
+                <div class="bg-yellow h-full min-h-[400px] relative overflow-hidden">
+                    <div class="relative w-full h-full">
+                        <h1 class="hidden lg:block text-6xl lg:text-9xl font-extrabold text-gray-300 z-10 absolute lg:-bottom-10 lg:-right-3">
+                            Power
+                        </h1>
                     </div>
+                    <!-- Desktop image -->
                     <img
                         src="<?php echo get_template_directory_uri() . '/src/assets/home/3d-camera-front.png'; ?>"
-                        class="absolute -top-20 lg:-top-40 z-20 w-full h-auto"
+                        class="hidden lg:block absolute top-0 left-0 right-0 mx-auto z-20 h-full object-contain"
+                        alt=""
+                    >
+                    <!-- Mobile image -->
+                    <img
+                        src="<?php echo get_template_directory_uri() . '/src/assets/home/3d-camera-front.png'; ?>"
+                        class="lg:hidden absolute top-0 left-0 right-0 mx-auto z-20 h-full object-contain"
                         alt=""
                     >
                 </div>
             </div>
-            <div class="col-span-1">
-                <div class="join join-vertical bg-base-100">
+            <!-- Right Column -->
+            <div class="flex-1 h-full">
+                <!-- Accordion -->
+                <div class="join join-vertical bg-base-100 h-full">
                     <div class="collapse collapse-creatives collapse-arrow join-item border-b border-gray-500 rounded-none dark:text-primary">
                         <input type="radio" name="my-accordion-4" checked="checked" />
                         <div class="collapse-title">
@@ -396,23 +404,36 @@
         </div>
     </section>
     <!-- NEWSLETTER -->
-    <section class="max-w-7xl xl:mx-auto bg-gray-100 mt-10 mb-5">
-        <div class="relative p-10 overflow-hidden relative overflow-hidden">
-                <div class="flex flex-col gap-10 justify-start w-4/7">
-                    <h1 class="text-5xl lg:text-8xl text-primary">Subscribe to our Newsletter</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error harum nam modi ipsa doloribus deserunt!</p>
-                    <div class="flex gap-5">
-                        <button class="btn-secondary">Enter your email</button>
-                        <button class="btn-accent">Enter your email</button>
-                    </div>
+    <section class="max-w-7xl mx-auto bg-gray-100 mt-10 mb-5 px-5">
+        <div class="relative p-10 flex flex-col-reverse md:flex-row items-center md:items-start gap-10 md:gap-0 overflow-hidden">
+            
+            <!-- Text Column -->
+            <div class="w-full md:w-4/7 flex flex-col gap-6 z-10">
+                <h1 class="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl text-primary leading-tight">
+                    Subscribe to our Newsletter
+                </h1>
+                <p class="text-gray-700">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error harum nam modi ipsa doloribus deserunt!
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input
+                        type="email"
+                        placeholder="Enter your email"
+                        class="bg-secondary rounded-full px-4 py-2
+                            invalid:border-accent invalid:text-accent focus:border-primary
+                            focus:outline focus:outline-primary focus:invalid:border-accent focus:invalid:outline-accent"
+                    />
+                    <button class="btn btn-accent w-full sm:w-auto">Subscribe</button>
                 </div>
-                <div class="absolute top-0 lg:-right-5">
-                    <img
-                        src="<?php echo get_template_directory_uri() . '/src/assets/home/video-3d-camera.png'; ?>"
-                        class="transform scale-80 lg:scale-150"
-                        alt=""
-                    >
-                </div>
+            </div>
+
+            <!-- Image Column -->
+            <div class="w-full md:w-3/7 flex justify-center md:justify-end relative">
+                <img
+                    src="<?php echo get_template_directory_uri() . '/src/assets/home/video-3d-camera.png'; ?>"
+                    class="w-[250px] sm:w-[300px] md:w-[350px] lg:w-[400px] object-contain transform scale-100"
+                    alt=""
+                >
             </div>
         </div>
     </section>
