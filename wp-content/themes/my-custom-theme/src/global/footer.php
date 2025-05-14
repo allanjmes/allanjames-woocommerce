@@ -1,5 +1,5 @@
 <footer class="bg-primary max-w-7xl xl:mx-auto py-5">
-    <h1 class="text-9xl text-secondary text-center font-extrabold mb-5">Logo<span class="text-accent">Here</span></h1>
+    <h1 class="text-6xl lg:text-9xl text-secondary text-center font-extrabold mb-5">Logo<span class="text-accent">Here</span></h1>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         <div class="flex flex-col gap-5 mx-auto text-secondary">
             <h4 class="fw-bold text-lg">Contact</h4>
