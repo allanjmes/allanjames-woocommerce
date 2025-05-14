@@ -1,7 +1,7 @@
 <header class="mx-5 max-w-7xl xl:mx-auto">
     <div class="py-10 border-b border-gray-500 grid grid-cols-3">
         <div class="flex gap-5 justify-start items-center">
-            <button class="btn-outline-primary flex gap-1 group/svg-menu">
+            <button class="btn-outline-primary flex items-center gap-2 group/svg-menu">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
@@ -14,24 +14,26 @@
                 </svg>
                 Menu
             </button>
-            <a type="button" class="btn-outline-primary flex gap-1 group/svg-shop" href="<?php echo site_url() . '/shop'; ?>">
+            <a type="button" class="btn-outline-primary flex items-center gap-1 group/svg-shop" href="<?php echo site_url() . '/shop'; ?>">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="20px"
-                    height="20px"
-                    viewBox="0 0 24 24"
+                    width="30px"
+                    height="30px"
+                    viewBox="0 0 25 25"
                     class="icon
                         stroke-primary group-hover/svg-shop:stroke-secondary
                         fill-secondary group-hover/svg-shop:fill-primary"
                 >
-                    <g id="handbag">
-                        <path class="cls-1" d="M3.41,7.23H20.59a0,0,0,0,1,0,0v12a3.23,3.23,0,0,1-3.23,3.23H6.64a3.23,3.23,0,0,1-3.23-3.23v-12A0,0,0,0,1,3.41,7.23Z" stroke-width="2"/>
-                        <path class="cls-1" d="M8.18,10.09V5.32A3.82,3.82,0,0,1,12,1.5h0a3.82,3.82,0,0,1,3.82,3.82v4.77" stroke-width="2"/>
-                    </g>
+                    <path d="M8.5 10.5H5L6.5 19.5H18.5L20 10.5H16.5M8.5 10.5L10.2721 5.18377C10.4082 4.77543 10.7903 4.5 11.2208 4.5H13.7792C14.2097 4.5 14.5918 4.77543 14.7279 5.18377L16.5 10.5M8.5 10.5H16.5" stroke-width="1.2"/>
+                    <path d="M12.5 10.5V19.5" stroke-width="1.2"/>
+                    <path d="M9.5 19.5L8.5 10.5" stroke-width="1.2"/>
+                    <path d="M15.5 19.5L16.5 10.5" stroke-width="1.2"/>
+                    <path d="M19.5 13.5H5.5" stroke-width="1.2"/>
+                    <path d="M19 16.5H6" stroke-width="1.2"/>
                 </svg>
                 Shop
             </a>
-            <button class="btn-outline-primary flex gap-1 group/svg-search">
+            <button class="btn-outline-primary flex items-center gap-1 group/svg-search">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"
@@ -55,7 +57,7 @@
             <button id="toggle-theme-btn" class="btn-primary">
                 <h1>Toggle</h1>
             </button>
-            <a type="button" class="btn-outline-primary flex gap-1 group/svg-cart" href="<?php echo site_url() . '/cart'; ?>">
+            <a type="button" class="btn-outline-primary flex gap-2 items-center group/svg-cart" href="<?php echo site_url() . '/cart'; ?>">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="20px"

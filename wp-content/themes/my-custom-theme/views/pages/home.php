@@ -9,11 +9,49 @@
         <div class="my-10"></div>
         <div class="bg-primary">
             <div class="grid grid-cols-1 lg:grid-cols-4">
-                <div class="col-span-1 flex flex-col justify-center gap-10 lg:ms-10">
+                <div class="col-span-1 flex flex-col justify-center items-start gap-10 lg:ms-10">
                     <h1 class="text-secondary text-3xl font-light">16 Megapixel HD digital camera</h1>
                     <div class="flex justify-center gap-3">
-                        <button class="btn-outline-secondary">Start Shopping</button>
-                        <button class="btn-secondary">-></button>
+                        <button class="btn-outline-secondary group/svg-arrow flex gap-2 items-center">
+                            Start Shopping
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="10px"
+                                height="10px"
+                                viewBox="-4.5 0 20 20"
+                                version="1.1"
+                                class="icon
+                                    stroke-secondary group-hover/svg-arrow:stroke-primary
+                                    fill-secondary group-hover/svg-arrow:fill-primary"
+                            >
+                                <g id="Page-1" stroke-width="1">
+                                    <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)">
+                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                            <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            version="1.1"
+                            id="Layer_1"
+                            width="50px"
+                            height="50px"
+                            viewBox="0 0 32 32"
+                            enable-background="new 0 0 32 32"
+                            xml:space="preserve"
+                            class="icon stroke-secondary fill-secondary"
+                        >
+                            <g>
+                                <path d="M16,0C7.178,0,0,7.178,0,16s7.178,16,16,16s16-7.178,16-16S24.822,0,16,0z M16,31C7.729,31,1,24.271,1,16   S7.729,1,16,1s15,6.729,15,15S24.271,31,16,31z"/>
+                                <path d="M19.609,14.802L14.316,10.8c-0.263-0.197-0.567-0.302-0.88-0.302C12.631,10.498,12,11.158,12,12v8   c0,0.842,0.635,1.502,1.445,1.502c0.313,0,0.619-0.104,0.885-0.304l5.258-3.998c0.382-0.287,0.611-0.742,0.611-1.218   C20.198,15.512,19.983,15.081,19.609,14.802z M18.985,16.401l-5.258,3.998C13.434,20.622,13,20.453,13,20v-8   c0-0.326,0.225-0.502,0.437-0.502c0.096,0,0.19,0.034,0.279,0.101l5.293,4.002c0.165,0.123,0.19,0.292,0.19,0.382   C19.198,16.147,19.122,16.3,18.985,16.401z"/>
+                            </g>
+                        </svg>
                     </div>
                 </div>
                 <div class="col-span-2 relative lg:-top-36">
@@ -29,8 +67,27 @@
                 <div class="col-span-1 flex flex-col justify-center gap-10 lg:me-10">
                     <h1 class="text-secondary text-3xl font-light">16 Megapixel HD digital camera</h1>
                     <div class="flex justify-center gap-3">
-                        <button class="btn-accent">Start Shopping</button>
-                        <button class="btn-outline-accent">-></button>
+                        <button class="btn-accent flex gap-2 items-center">
+                            Start Shopping
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink"
+                                width="10px"
+                                height="10px"
+                                viewBox="-4.5 0 20 20"
+                                version="1.1"
+                                class="icon stroke-secondary fill-secondary"
+                            >
+                                <g id="Page-1" stroke-width="1">
+                                    <g id="Dribbble-Light-Preview" transform="translate(-305.000000, -6679.000000)">
+                                        <g id="icons" transform="translate(56.000000, 160.000000)">
+                                            <path d="M249.365851,6538.70769 L249.365851,6538.70769 C249.770764,6539.09744 250.426289,6539.09744 250.830166,6538.70769 L259.393407,6530.44413 C260.202198,6529.66364 260.202198,6528.39747 259.393407,6527.61699 L250.768031,6519.29246 C250.367261,6518.90671 249.720021,6518.90172 249.314072,6519.28247 L249.314072,6519.28247 C248.899839,6519.67121 248.894661,6520.31179 249.302681,6520.70653 L257.196934,6528.32352 C257.601847,6528.71426 257.601847,6529.34685 257.196934,6529.73759 L249.365851,6537.29462 C248.960938,6537.68437 248.960938,6538.31795 249.365851,6538.70769" id="arrow_right-[#336]">
+                                            </path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
