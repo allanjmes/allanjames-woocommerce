@@ -1,23 +1,87 @@
 <header class="mx-5 max-w-7xl xl:mx-auto">
     <div class="py-10 border-b border-gray-500 grid grid-cols-2 md:grid-cols-3">
         <div class="flex gap-2 md:gap-3 lg:gap-5 justify-start items-center">
-            
-            <button class="btn-outline-primary rounded-xl lg:rounded-full flex md:flex-col lg:flex-row items-center gap-1 lg:gap-2 group/svg-menu h-full">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1024 1024"
-                    class="icon fill-primary group-hover/svg-menu:fill-secondary h-[15px] w-[15px] lg:h-[20px] lg:w-[20px]"
-                    version="1.1"
-                >
-                    <path d="M109.632 673.664h519.68c25.152 0 45.568-22.016 45.568-48.896 0-26.88-20.416-48.896-45.568-48.896h-519.68c-25.216 0-45.632 22.016-45.632 48.896 0 26.88 20.48 48.896 45.632 48.896z m0-228.096h519.68c25.152 0 45.568-21.952 45.568-48.896 0-26.88-20.416-48.896-45.568-48.896h-519.68c-25.216 0-45.632 22.016-45.632 48.896 0 26.88 20.48 48.896 45.632 48.896z m3.264-219.904h795.776c26.88 0 50.56-20.352 51.328-47.168A48.896 48.896 0 0 0 911.104 128H115.328c-26.88 0-50.56 20.416-51.328 47.168a48.896 48.896 0 0 0 48.896 50.56z m619.776 447.232V348.672L960 510.784l-227.328 162.112c0 0.768 0 0.768 0 0z m178.432 122.944H115.328c-26.88 0-50.56 20.48-51.328 47.232a48.896 48.896 0 0 0 48.896 50.496h795.776c26.88 0 50.56-20.416 51.328-47.232a48.896 48.896 0 0 0-48.896-50.496z"/>
-                </svg>
-                <span class="hidden lg:block">
-                    Menu
-                </span>
-                <span class="hidden md:block lg:hidden text-xs">
-                    Menu
-                </span>
-            </button>
+            <div class="flex gap-2 h-full">
+                <!-- Start - Sidebar Drawer -->
+                <div class="drawer w-auto h-full">
+                    <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+                    <div class="drawer-content w-full h-full flex items-middle">
+                        <label for="my-drawer" class="btn-outline-primary h-full py-3 rounded-md md:rounded-xl lg:rounded-full cursor-pointer flex md:flex-col lg:flex-row md:gap-1 lg:gap-2 group/svg-menu">
+                            <div class="flex justify-center items-center">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 1024 1024"
+                                    class="icon fill-primary group-hover/svg-menu:fill-secondary h-[15px] w-[15px] lg:h-[20px] lg:w-[20px]"
+                                    version="1.1"
+                                >
+                                    <path d="M109.632 673.664h519.68c25.152 0 45.568-22.016 45.568-48.896 0-26.88-20.416-48.896-45.568-48.896h-519.68c-25.216 0-45.632 22.016-45.632 48.896 0 26.88 20.48 48.896 45.632 48.896z m0-228.096h519.68c25.152 0 45.568-21.952 45.568-48.896 0-26.88-20.416-48.896-45.568-48.896h-519.68c-25.216 0-45.632 22.016-45.632 48.896 0 26.88 20.48 48.896 45.632 48.896z m3.264-219.904h795.776c26.88 0 50.56-20.352 51.328-47.168A48.896 48.896 0 0 0 911.104 128H115.328c-26.88 0-50.56 20.416-51.328 47.168a48.896 48.896 0 0 0 48.896 50.56z m619.776 447.232V348.672L960 510.784l-227.328 162.112c0 0.768 0 0.768 0 0z m178.432 122.944H115.328c-26.88 0-50.56 20.48-51.328 47.232a48.896 48.896 0 0 0 48.896 50.496h795.776c26.88 0 50.56-20.416 51.328-47.232a48.896 48.896 0 0 0-48.896-50.496z"/>
+                                </svg>
+                            </div>
+                            <span class="hidden lg:block">
+                                Menu
+                            </span>
+                            <span class="hidden md:block lg:hidden text-xs">
+                                Menu
+                            </span>
+                        </label>
+                    </div>
+                    <div class="drawer-side dark:backdrop-opacity-5">
+                        <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+                        <ul class="menu bg-secondary border-e border-primary text-base-content min-h-full w-70 md:w-90 lg:w-120 px-4 py-0">
+                            <div class="py-7 border-b border-gray-500 flex flex-row-reverse justify-between">
+                                <li class="my-auto flex justify-center items-middle">
+                                    <button id="close-my-drawer">
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            width="30px"
+                                            height="30px"
+                                            viewBox="0 0 24 24"
+                                            class="stroke-primary"
+                                            fill="none"
+                                        >
+                                            <path class="stroke-primary" d="M9.16998 14.83L14.83 9.17004" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="stroke-primary" d="M14.83 14.83L9.16998 9.17004" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path class="stroke-primary" d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="">
+                                    <a href="<?php echo site_url(); ?>">
+                                        <h1 class="text-2xl sm:text-3xl font-extrabold text-primary leading-none">Logo<span class="text-accent">Here</span></h1>
+                                    </a>
+                                </li>
+                            </div>
+                            <li class="pt-5"><a>Sidebar Item 1</a></li>
+                            <li><a>Sidebar Item 2</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End - Sidebar Drawer -->
+                <div class="flex md:hidden rounded-md border border-primary p-1 h-full justify-between items-center">
+                    <label class="swap swap-rotate">
+                    <!-- this hidden checkbox controls the state -->
+                    <input id="toggle-theme-btn-sm" type="checkbox" class="theme-controller" value="synthwave" />
+
+                    <!-- sun icon -->
+                    <svg
+                        class="swap-off h-10 w-10 fill-primary"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path
+                        d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
+                    </svg>
+
+                    <!-- moon icon -->
+                    <svg
+                        class="swap-on h-10 w-10 fill-primary"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24">
+                        <path
+                        d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
+                    </svg>
+                    </label>
+                </div>
+            </div>
             <a type="button" class="btn-outline-primary rounded-xl lg:rounded-full hidden md:flex flex-col lg:flex-row gap-0 lg:gap-1 items-center group/svg-shop h-full" href="<?php echo site_url() . '/shop'; ?>">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -61,11 +125,10 @@
             </a>
         </div>
         <div class="flex gap-5 justify-end items-center">
-            <div class="hidden md:flex flex-col-reverse lg:flex-row rounded-xl border border-primary p-1 h-full justify-between items-center">
+            <div class="hidden md:flex lg:flex-row rounded-xl border border-primary p-1 h-full justify-between items-center">
                 <label class="swap swap-rotate">
                 <!-- this hidden checkbox controls the state -->
-                <input id="toggle-theme-btn" type="checkbox" class="theme-controller" value="synthwave" />
-
+                <input id="toggle-theme-btn-lg" type="checkbox" class="theme-controller" value="synthwave" />
                 <!-- sun icon -->
                 <svg
                     class="swap-off h-10 w-10 fill-primary"
@@ -74,7 +137,6 @@
                     <path
                     d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z" />
                 </svg>
-
                 <!-- moon icon -->
                 <svg
                     class="swap-on h-10 w-10 fill-primary"
@@ -84,11 +146,7 @@
                     d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z" />
                 </svg>
                 </label>
-                <!-- <input id="toggle-theme-btn" type="checkbox" checked="checked" class="toggle" /> -->
             </div>
-            <!-- <button id="toggle-theme-btn" class="btn-primary rounded-xl lg:rounded-full h-full hidden md:block">
-                <h1>Toggle</h1>
-            </button> -->
             <a type="button" class="btn-outline-primary rounded-xl lg:rounded-full hidden md:flex flex-col lg:flex-row gap-0 lg:gap-2 items-center group/svg-cart h-full" href="<?php echo site_url() . '/cart'; ?>">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

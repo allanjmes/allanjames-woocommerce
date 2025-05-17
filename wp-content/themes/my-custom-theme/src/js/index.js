@@ -3,6 +3,7 @@ import '../../style.css';
 
 import './page-loader';
 import './toggle-theme';
+import './close-sidebar-drawer';
 
 // Cart Quantity
 document.addEventListener('DOMContentLoaded', function () {
