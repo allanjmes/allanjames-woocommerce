@@ -1,4 +1,3 @@
-<!-- <div id="main-content" style="display: none;"> -->
     <!-- HERO -->
     <section class="max-w-7xl xl:mx-auto">
         <div class="flex justify-center">
