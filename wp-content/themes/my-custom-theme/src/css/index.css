@@ -1,15 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 @import "tailwindcss";
 @plugin "daisyui";
 @plugin "daisyui" {
   themes: false;
   include: toggle;
-  exclude: rootcolor;
 }
 @plugin "daisyui/theme" {
   name: "light";
@@ -18,7 +13,7 @@
   --color-primary: oklch(26.2% 0.047 35.38);
   --color-secondary: oklch(96.2% 0.015 97.1);
   --color-accent: oklch(73.0% 0.196 65.8);
-  --color-yellow: oklch(88.1% 0.185 83.1);
+  --color-warning: oklch(88.1% 0.185 83.1);
   --color-gray-100: oklch(94% 0.015 97.1);
   --color-gray-300: oklch(0.86 0.0098 87.47);
   --color-gray-500: oklch(0.66 0.0094 84.58);
@@ -42,7 +37,7 @@
   --color-primary: oklch(88.0% 0.05 35.38);
   --color-secondary: oklch(14.2% 0.015 97.1);
   --color-accent: oklch(73.0% 0.196 65.8);
-  --color-yellow: oklch(88.1% 0.185 83.1);
+  --color-warning: oklch(88.1% 0.185 83.1);
   --color-gray-100: oklch(56.2% 0.015 97.1);
   --color-gray-300: oklch(66.2% 0.015 97.1);
   --color-gray-500: oklch(86.2% 0.015 97.1);

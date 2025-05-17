@@ -1,7 +1,7 @@
     <!-- HERO -->
     <section class="max-w-7xl xl:mx-auto">
         <div class="flex justify-center">
-            <h1 class="text-6xl text-center md:text-8xl lg:text-justify lg:text-9xl font-semibold tracking-thin bg-gradient-to-r from-primary via-yellow to-accent bg-clip-text text-transparent leading-normal">
+            <h1 class="text-6xl text-center md:text-8xl lg:text-9xl font-semibold tracking-thin bg-gradient-to-r from-primary via-yellow to-accent bg-clip-text text-transparent leading-normal">
                 <span class="font-anuphan">Fujifilm</span> GFX 100S
             </h1>
         </div>
@@ -119,7 +119,7 @@
                         'svg_class' => 'stroke-black fill-black h-[45px] w-auto'
                     ]); ?>
                 </div>
-                <div class="bg-yellow col-span-2 h-40 lg:h-60 flex justify-center relative">
+                <div class="bg-warning col-span-2 h-40 lg:h-60 flex justify-center relative">
                     <img
                         src="<?php echo get_template_directory_uri() . '/src/assets/home/video-3d-camera.png'; ?>"
                         class="transform scale-230 lg:scale-260 relative lg:top-5"
@@ -135,7 +135,7 @@
             <h1 class="text-6xl lg:text-9xl col-span-1 text-primary text-center lg:mx-10">Our Exclusive Camera Just For You</h1>
         </div>
         <div class="flex flex-col gap-5">
-            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none has-checked:bg-yellow dark:text-primary dark:has-checked:text-secondary">
+            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none has-checked:bg-warning dark:text-primary dark:has-checked:text-secondary">
                 <input type="radio" name="my-accordion-1" />
                 <div class="collapse-title">
                     <h1 class="font-semibold text-center text-lg lg:text-3xl">Phase One XF IQ4 150MP</h1>
@@ -156,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none has-checked:bg-yellow dark:text-primary dark:has-checked:text-secondary">
+            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none has-checked:bg-warning dark:text-primary dark:has-checked:text-secondary">
                 <input type="radio" name="my-accordion-1" checked="checked" />
                 <div class="collapse-title">
                     <h1 class="font-semibold text-center text-lg lg:text-3xl">Phase One XF IQ4 150MP</h1>
@@ -177,7 +177,7 @@
                     </div>
                 </div>
             </div>
-            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none has-checked:bg-yellow dark:text-primary dark:has-checked:text-secondary">
+            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none has-checked:bg-warning dark:text-primary dark:has-checked:text-secondary">
                 <input type="radio" name="my-accordion-1" />
                 <div class="collapse-title">
                     <h1 class="font-semibold text-center text-lg lg:text-3xl">Phase One XF IQ4 150MP</h1>
@@ -198,7 +198,7 @@
                     </div>
                 </div>
             </div>
-            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none has-checked:bg-yellow dark:text-primary dark:has-checked:text-secondary">
+            <div class="collapse collapse-exclusive collapse-arrow border border-gray-300 rounded-none has-checked:bg-warning dark:text-primary dark:has-checked:text-secondary">
                 <input type="radio" name="my-accordion-1" />
                 <div class="collapse-title">
                     <h1 class="font-semibold text-center text-lg lg:text-3xl">Phase One XF IQ4 150MP</h1>
@@ -317,7 +317,7 @@
         <div class="flex flex-col md:flex-row gap-10 py-10">
             <!-- Left Column -->
             <div class="flex-1 h-full">
-                <div class="bg-yellow h-full min-h-[400px] relative overflow-hidden">
+                <div class="bg-warning h-full min-h-[400px] relative overflow-hidden">
                     <div class="relative w-full h-full">
                         <h1 class="hidden lg:block text-6xl lg:text-9xl font-extrabold text-gray-300 z-10 absolute lg:-bottom-10 lg:-right-3">
                             Power
@@ -422,7 +422,7 @@
                             invalid:border-accent invalid:text-accent focus:border-primary
                             focus:outline focus:outline-primary focus:invalid:border-accent focus:invalid:outline-accent"
                     />
-                    <button class="btn btn-accent w-full sm:w-auto">Subscribe</button>
+                    <button class="btn-accent w-full sm:w-auto">Subscribe</button>
                 </div>
             </div>
 
