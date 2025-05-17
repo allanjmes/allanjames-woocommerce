@@ -5,14 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 @import "tailwindcss";
+@plugin "daisyui";
 @plugin "daisyui" {
-  themes: abyss;
-  include: collapse, toggle;
+  themes: false;
+  include: toggle;
+  exclude: rootcolor;
 }
+@plugin "daisyui/theme" {
+  name: "light";
+  default: true;
 
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
-
-@theme {
   --color-primary: oklch(26.2% 0.047 35.38);
   --color-secondary: oklch(96.2% 0.015 97.1);
   --color-accent: oklch(73.0% 0.196 65.8);
@@ -33,27 +35,32 @@
   --font-anuphan: "Anuphan", sans-serif;
   --font-archivo: "Archivo", sans-serif;
 }
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: true;
+
+  --color-primary: oklch(88.0% 0.05 35.38);
+  --color-secondary: oklch(14.2% 0.015 97.1);
+  --color-accent: oklch(73.0% 0.196 65.8);
+  --color-yellow: oklch(88.1% 0.185 83.1);
+  --color-gray-100: oklch(56.2% 0.015 97.1);
+  --color-gray-300: oklch(66.2% 0.015 97.1);
+  --color-gray-500: oklch(86.2% 0.015 97.1);
+
+  --color-white: #ffffff;
+  --color-black: #000;
+
+  --color-hover-primary: oklch(98.8% 0.05 35.38);
+  --color-hover-secondary: oklch(20.2% 0.015 97.1);
+  --color-hover-accent: oklch(58.0% 0.196 65.8);
+
+  --color-disabled-primary: oklch(68.8% 0.05 35.38);
+}
+
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 @layer base {
-  [data-theme="dark"] {
-    --color-primary: oklch(88.0% 0.05 35.38);
-    --color-secondary: oklch(14.2% 0.015 97.1);
-    --color-accent: oklch(73.0% 0.196 65.8);
-    --color-yellow: oklch(88.1% 0.185 83.1);
-    --color-gray-100: oklch(56.2% 0.015 97.1);
-    --color-gray-300: oklch(66.2% 0.015 97.1);
-    --color-gray-500: oklch(86.2% 0.015 97.1);
-
-    --color-white: #ffffff;
-    --color-black: #000;
-
-    --color-hover-primary: oklch(98.8% 0.05 35.38);
-    --color-hover-secondary: oklch(20.2% 0.015 97.1);
-    --color-hover-accent: oklch(58.0% 0.196 65.8);
-
-    --color-disabled-primary: oklch(68.8% 0.05 35.38);
-  }
-
   .font-anuphan {
     font-family: var(--font-anuphan);
     font-optical-sizing: auto;
@@ -222,4 +229,8 @@ input[type=number] {
   border-top-color: var(--color-accent);
   background-color: var(--color-gray-100);
   color: var(--color-primary);
+}
+
+html {
+  background-color: var(--color-secondary);
 }

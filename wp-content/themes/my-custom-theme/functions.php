@@ -71,6 +71,7 @@ function page_loader_inline_styles() {
     <style>
         html.loading, body.loading {
             overflow: hidden;
+            background-color: #f5f3e8;
         }
         #loading-container {
             position: fixed;
@@ -105,12 +106,11 @@ function inject_page_loader() {
     <?php
 }
 
-
 add_action('wp_enqueue_scripts', 'enqueue_page_loader_script');
 function enqueue_page_loader_script() {
     wp_enqueue_script(
         'page-loader',
-        get_template_directory_uri() . '/js/page-loader.js',
+        get_template_directory_uri() . '/src/js/page-loader.js',
         [],
         false,
         true // load in footer
