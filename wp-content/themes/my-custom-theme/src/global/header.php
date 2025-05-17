@@ -28,7 +28,7 @@
                     <div class="drawer-side dark:backdrop-opacity-5">
                         <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
                         <ul class="menu bg-secondary border-e border-primary text-base-content min-h-full w-70 md:w-90 lg:w-120 px-4 py-0">
-                            <div class="py-7 border-b border-gray-500 flex flex-row-reverse justify-between">
+                            <div class="py-10 border-b border-gray-500 flex flex-row-reverse justify-between">
                                 <li class="my-auto flex justify-center items-middle">
                                     <button id="close-my-drawer">
                                         <svg
@@ -51,8 +51,9 @@
                                     </a>
                                 </li>
                             </div>
-                            <li class="pt-5"><a>Sidebar Item 1</a></li>
-                            <li><a>Sidebar Item 2</a></li>
+                            <li class="pt-5">Search</li>
+                            <li><a href="<?php echo site_url() . '/shop'; ?>">Shop</a></li>
+                            <li><a href="<?php echo site_url() . '/cart'; ?>">Cart</a></li>
                         </ul>
                     </div>
                 </div>
