@@ -1,3 +1,9 @@
+<?php
+// add no-caching for infinityfree to update automatically on file change
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Expires: 0");
+header("Pragma: no-cache");
+?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> data-theme="light">
 <head>
